@@ -2,6 +2,7 @@ import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import About from "@/components/About";
 import Championships from "@/components/Championships";
+import MediaMarquee from "@/components/MediaMarquee";
 import Journey from "@/components/Journey";
 import CallToAction from "@/components/CallToAction";
 import Footer from "@/components/Footer";
@@ -13,6 +14,7 @@ const Index = () => {
       <StatsBar />
       <About />
       <Championships />
+      <MediaMarquee />
       <Journey />
       <CallToAction />
       <Footer />
