@@ -1,11 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, Mail, Sparkles } from "lucide-react";
+import ctaImage from "@/assets/crowd-celebration.jpg";
 
 const CallToAction = () => {
   return (
     <section className="py-16 md:py-24 bg-gradient-dark relative overflow-hidden">
-      {/* Animated Background */}
+      {/* Background Image with Overlay */}
       <div className="absolute inset-0">
+        <img
+          src={ctaImage}
+          alt="Husain Al Kandari with crowd"
+          className="w-full h-full object-cover opacity-10"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background/90" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold/10 rounded-full blur-3xl animate-pulse-glow" />
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-uae-red/10 rounded-full blur-3xl animate-pulse-glow" style={{ animationDelay: '1s' }} />
       </div>

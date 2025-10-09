@@ -1,17 +1,23 @@
 import { Button } from "@/components/ui/button";
 import { Instagram, Play } from "lucide-react";
-import heroImage from "@/assets/hero-boxing.jpg";
+import heroImage from "@/assets/victory-uae-flag.jpg";
+import fightVideo from "@/assets/fight-video.mp4";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Background Video/Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src={heroImage}
-          alt="Husain Al Kandari Boxing"
-          className="w-full h-full object-cover opacity-40"
-        />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-30"
+          poster={heroImage}
+        >
+          <source src={fightVideo} type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-hero opacity-80" />
       </div>
 
